@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Khaing Zin Htet 💙</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="skyCanvas"></canvas>
+<canvas id="fireworksCanvas"></canvas>
+<div id="hearts"></div>
+<div id="butterflies"></div>
+
+<!-- Music -->
+<audio id="bgMusic" loop preload="auto">
+    <source src="birthday-song.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-panel">
+    <button id="musicButton" class="music-button" title="Play / Pause music">♪</button>
+    <div id="musicControls" class="music-controls">
+        <div class="music-title">♫ Birthday Music</div>
+        <div class="visualizer" id="visualizer">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <input id="volumeSlider" type="range" min="0" max="1" step="0.01" value="0.75">
+        <span id="volumeText">75%</span>
+    </div>
+</div>
+
+<div id="birthdayPopup" class="popup">
+    <div class="popup-card glass-card">
+        <div class="emoji">🎂</div>
+        <h2>Happy Birthday 💙</h2>
+        <p>
+            Today is your special day, Khaing Zin Htet.
+            <br><br>
+            I hope your day is filled with beautiful moments,
+            genuine smiles and everything that makes you happy.
+        </p>
+        <button class="main-button" onclick="closeBirthdayPopup()">Continue ♡</button>
+    </div>
+</div>
+
+<main>
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="eyebrow">A little surprise for someone special</div>
+        <h1>Happy Birthday <span>Khaing Zin Htet</span></h1>
+        <div class="birth-date">April 16, 2007</div>
+        <div class="divider"></div>
+        <p class="hero-description">
+            Some people enter the world quietly...
+            <br>
+            but somehow make someone else's world a little brighter just by being there.
+        </p>
+        <button id="surpriseButton" class="main-button">Open Your Surprise 💙</button>
+    </div>
+    <div class="scroll-hint">SCROLL TO DISCOVER</div>
+</section>
+
+<section class="birthday-section">
+    <div class="section-container">
+        <div class="label">APRIL 16</div>
+        <h2>The day you were born</h2>
+        <p class="section-description">
+            On this day, the world became a little more beautiful because you arrived in it.
+        </p>
+        <div class="age-card glass-card">
+            <div id="age" class="age-number">19</div>
+            <div class="age-info">
+                <strong>YEARS</strong>
+                <span>of being wonderful</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="countdown-section">
+    <div class="section-container">
+        <div class="label">COUNTING DOWN</div>
+        <h2>Until your next birthday</h2>
+        <p class="section-description">
+            Another year of memories, smiles and beautiful moments.
+        </p>
+        <div class="countdown">
+            <div class="time-box"><strong id="days">00</strong><span>Days</span></div>
+            <div class="time-box"><strong id="hours">00</strong><span>Hours</span></div>
+            <div class="time-box"><strong id="minutes">00</strong><span>Minutes</span></div>
+            <div class="time-box"><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="message-section">
+    <div class="section-container">
+        <div class="message-card glass-card">
+            <div class="label">A LITTLE MESSAGE</div>
+            <h2>For You 💙</h2>
+            <div class="message">
+                <p>I don't know if you realize how special you are.</p>
+                <p>But somehow, your smile can make an ordinary day feel a little brighter.</p>
+                <p>So on your birthday, I just wanted to say something simple...</p>
+                <p class="highlight">I'm really happy that you were born.</p>
+                <p>
+                    I hope this new chapter of your life brings you happiness,
+                    beautiful memories, peaceful moments and countless reasons to smile.
+                </p>
+            </div>
+            <button id="secretButton" class="main-button">There's one more thing... ♡</button>
+            <div id="secretMessage" class="secret-message">
+                <div class="big-heart">♥</div>
+                <h3>You are someone really special to me.</h3>
+                <p>
+                    And maybe... just maybe...
+                    I like you a little more than I should. 💙
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="memories-section">
+    <div class="section-container">
+        <div class="label">LITTLE MEMORIES</div>
+        <h2>Moments worth keeping</h2>
+        <p class="section-description">Replace these three pictures with your favorite memories.</p>
+        <div class="photo-grid">
+            <div class="polaroid">
+                <img src="photo1.jpg" alt="Memory 1">
+                <p>A beautiful moment ♡</p>
+            </div>
+            <div class="polaroid">
+                <img src="photo2.jpg" alt="Memory 2">
+                <p>One to remember 💙</p>
+            </div>
+            <div class="polaroid">
+                <img src="photo3.jpg" alt="Memory 3">
+                <p>You make moments special ✨</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="final-section">
+    <div class="section-container">
+        <div class="final-heart">♥</div>
+        <h2>Happy Birthday <span>Khaing Zin Htet</span></h2>
+        <p class="final-text">
+            May your smile stay bright, your heart stay happy,
+            and may this year bring you everything you've been wishing for.
+        </p>
+        <div class="signature">— From someone who thinks you're special 💙</div>
+    </div>
+</section>
+
+</main>
+
+<footer>Made with ♡ for Khaing Zin Htet</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
